@@ -1,0 +1,30 @@
+/* Estilos personalizados */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.hero {
+    background: linear-gradient(45deg, #007bff, #6610f2);
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+#sobre-mi img {
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
+}
+
+form .btn-primary {
+    width: 100%;
+}
