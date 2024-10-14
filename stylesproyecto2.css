@@ -1,0 +1,460 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a202c;
+    color: white;
+}
+
+/* Header y navegación */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(26, 32, 44, 0.9); /* Aumentado la opacidad */
+    backdrop-filter: blur(10px); /* Aumentado el desenfoque */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Añadida sombra sutil */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem; /* Aumentado el padding horizontal */
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 1.5rem; /* Añadido espacio entre elementos del menú */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    font-weight: 500; /* Añadido peso a la fuente */
+    position: relative; /* Para el efecto de subrayado */
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #ed8936;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ed8936;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Estilos para el nuevo nav */
+.navbar {
+    background-color: rgba(26, 32, 44, 0.9);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-logo {
+    color: #ed8936;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-logo:hover {
+    color: #dd6b20;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #ed8936;
+}
+
+.nav-btn {
+    background-color: #ed8936;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #dd6b20;
+    color: white;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: rgba(26, 32, 44, 0.9);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-link {
+        margin: 1.5rem 0;
+    }
+}
+
+/* Sección Hero */
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url('img2/StockCake-Planning\ global\ travel_1727288847.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(76, 29, 149, 0.7), rgba(234, 88, 12, 0.7));
+}
+
+#hero > div {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+#hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease-out;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease-out 0.5s both;
+}
+
+/* Estilos para el formulario en la sección hero */
+#hero form {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+#hero form input,
+#hero form button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#hero form input {
+    flex-grow: 1;
+    margin-right: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+#hero form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#hero form button {
+    background-color: #ed8936;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#hero form button:hover {
+    background-color: #dd6b20;
+}
+
+#hero form button[type="submit"] {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Ajustes responsivos para el formulario */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    #hero form input,
+    #hero form button {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Estilos para el botón de volver al inicio */
+.btn-volver-inicio {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ed8936;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.btn-volver-inicio:hover {
+    background-color: #dd6b20;
+    color: white;
+}
+
+.btn-volver-inicio i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.btn-volver-inicio span {
+    display: none;
+}
+
+.btn-volver-inicio:hover span {
+    display: inline;
+}
+
+@media (max-width: 768px) {
+    .btn-volver-inicio {
+        left: 10px;
+        padding: 8px 12px;
+    }
+}
+
+/* Estilos para la sección de aventuras */
+#adventures {
+    padding: 4rem 2rem;
+    background-image: url('img/adventure-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#adventures::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(76, 29, 149, 0.8), rgba(234, 88, 12, 0.8));
+}
+
+#adventures .container {
+    position: relative;
+    z-index: 2;
+}
+
+.adventure-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.adventure-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.adventure-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.adventure-card-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.adventure-card .title {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.adventure-card p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1rem;
+}
+
+.adventure-card .price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ed8936;
+    margin-top: auto;
+    margin-bottom: 1rem;
+}
+
+.adventure-card .button {
+    align-self: flex-start;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-aos="fade-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilos para el navbar */
+.navbar {
+    background-color: rgba(26, 32, 44, 0.9);
+}
+
+.navbar-burger {
+    color: white;
+}
+
+.navbar-burger:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-item {
+    color: white !important;
+}
+
+.navbar-item:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: #ed8936 !important;
+}
+
+.navbar-menu {
+    background-color: rgba(26, 32, 44, 0.9);
+}
+
+.button.is-primary {
+    background-color: #ed8936;
+}
+
+.button.is-primary:hover {
+    background-color: #dd6b20;
+}
+
+/* Asegúrate de que el menú desplegable en móviles también sea visible */
+@media screen and (max-width: 1023px) {
+    .navbar-menu.is-active {
+        background-color: rgba(26, 32, 44, 0.9);
+    }
+}

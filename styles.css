@@ -1,0 +1,37 @@
+/* Estilos personalizados */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.hero {
+    background: linear-gradient(45deg, #007bff, #6610f2);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    padding: 0;
+    margin-right: 1rem;
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+#sobre-mi img {
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
+}
+
+form .btn-primary {
+    width: 100%;
+}
+
+.navbar-logo {
+    max-height: 40px; /* Ajusta este valor según el tamaño que desees para tu logo */
+    width: auto;
+}

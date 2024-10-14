@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Tu tienda de tecnología</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="stylesproyecto4.css">
+</head>
+<body>
+    <div class="btn-volver-inicio-container">
+        <a href="index.html" class="btn-volver-inicio">
+            <i class="fas fa-home"></i>
+            <span class="btn-text">Volver al Inicio</span>
+        </a>
+    </div>
+
+    <header>
+        <div class="logo-container">
+            <img src="img/logo.png" alt="TechStore Logo" class="logo">
+            <h1>TechStore</h1>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Buscar productos...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="cart-container">
+            <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </header>
+
+    <nav class="sidebar">
+        <ul>
+            <li>
+                <a href="#" class="menu-item">Ordenadores <i class="fas fa-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="#laptops">Laptops</a></li>
+                    <li><a href="#desktops">Desktops</a></li>
+                    <li><a href="#all-in-one">All-in-One</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="menu-item">Componentes <i class="fas fa-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="#procesadores">Procesadores</a></li>
+                    <li><a href="#tarjetas-graficas">Tarjetas Gráficas</a></li>
+                    <li><a href="#memorias">Memorias RAM</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="menu-item">Electrodomésticos <i class="fas fa-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="#refrigeradores">Refrigeradores</a></li>
+                    <li><a href="#lavadoras">Lavadoras</a></li>
+                    <li><a href="#hornos">Hornos</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="menu-item">Gadgets <i class="fas fa-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="#smartwatches">Smartwatches</a></li>
+                    <li><a href="#auriculares">Auriculares</a></li>
+                    <li><a href="#camaras">Cámaras</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="menu-item">Smartphones <i class="fas fa-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="#android">Android</a></li>
+                    <li><a href="#ios">iOS</a></li>
+                    <li><a href="#otros">Otros</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="menu-item">Audio <i class="fas fa-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="#altavoces">Altavoces</a></li>
+                    <li><a href="#auriculares">Auriculares</a></li>
+                    <li><a href="#microfonos">Micrófonos</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <section class="slider-section">
+            <div class="swiper-container main-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <h2>50% de descuento en laptops</h2>
+                            <p>Aprovecha nuestras ofertas especiales en laptops de última generación.</p>
+                            <a href="#" class="btn btn-primary">Ver ofertas</a>
+                        </div>
+                        <img src="img4/notebook-g16-7630-nt-black-gallery-1.avif" alt="Oferta de laptops">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <h2>Compra un PC, llévate un monitor gratis</h2>
+                            <p>Por la compra de cualquier PC de escritorio, llévate un monitor de 24" gratis.</p>
+                            <a href="#" class="btn btn-primary">Ver detalles</a>
+                        </div>
+                        <img src="img4/1381-pccom-work-intel-core-i5-12400-32gb-1tb-ssd-windows-11-pro-alurin-100ipslite-238-bundle.webp" alt="Oferta PC y monitor">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <h2>2x1 en accesorios para gaming</h2>
+                            <p>Lleva dos accesorios gaming y paga solo el de mayor valor.</p>
+                            <a href="#" class="btn btn-primary">Comprar ahora</a>
+                        </div>
+                        <img src="img4/s-l1200.jpg" alt="Oferta accesorios gaming">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <!-- Nueva sección de oferta por tiempo limitado -->
+        <section id="oferta-limitada" class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="img4/1381-pccom-work-intel-core-i5-12400-32gb-1tb-ssd-windows-11-pro-alurin-100ipslite-238-bundle.webp" alt="Oferta Especial" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <h2>¡Oferta Especial por Tiempo Limitado!</h2>
+                        <p>No te pierdas esta increíble oportunidad. La oferta termina en:</p>
+                        <div id="countdown" class="countdown">
+                            <div>
+                                <span id="hours"></span>
+                                <div class="countdown-label">Horas</div>
+                            </div>
+                            <div>
+                                <span id="minutes"></span>
+                                <div class="countdown-label">Minutos</div>
+                            </div>
+                            <div>
+                                <span id="seconds"></span>
+                                <div class="countdown-label">Segundos</div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-lg mt-3">¡Aprovechar Oferta!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ofertas-destacadas" class="product-section">
+            <div class="container">
+                <h2 class="text-center mb-4">Descubre las mejores ofertas de la semana</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="product-card offer">
+                            <span class="offer-badge">-17%</span>
+                            <img src="img4/1418-asus-vivobook-go-15-e1504fa-nj1262w-amd-ryzen-5-7520u-16gb-512gb-ssd-156.webp" class="card-img-top" alt="Lenovo IdeaPad">
+                            <div class="card-body">
+                                <div class="tags">
+                                    <span class="tag tag-recomendado">Te recomendamos</span>
+                                    <span class="tag tag-trending">Trending</span>
+                                </div>
+                                <h5 class="card-title">Lenovo IdeaPad Slim 3 15IAH8 Intel Core i5-12450H/16GB/512GB SSD/15.6"</h5>
+                                <p class="offer-price">499€</p>
+                                <p class="original-price">599€</p>
+                                <div class="rating">
+                                    <span class="stars">★★★★☆</span>
+                                    <span class="reviews">1023 opiniones</span>
+                                </div>
+                                <p class="delivery">Recíbelo gratis mañana</p>
+                            </div>
+                            <button class="btn btn-primary btn-add-to-cart">Añadir al carrito</button>
+                                <label class="compare-label">
+                                    <input type="checkbox" class="compare-checkbox">
+                                    Comparar
+                                </label>
+                        </div>
+                    </div>
+                    <!-- Repite este bloque para los otros dos productos -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Ordenadores -->
+        <section id="ordenadores" class="product-section">
+            <div class="container">
+                <h2 class="text-center mb-4">Ordenadores</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="product-card">
+                            <span class="offer-badge">-11%</span>
+                            <img src="img4/1418-asus-vivobook-go-15-e1504fa-nj1262w-amd-ryzen-5-7520u-16gb-512gb-ssd-156.webp" class="card-img-top" alt="ASUS Vivobook">
+                            <div class="card-body">
+                                <span class="tag tag-regalo">Incluye regalo</span>
+                                <h5 class="card-title">ASUS Vivobook Go 15 E1504FA-NJ1262W AMD Ryzen 5 7520U/16GB/512GB SSD/15.6"</h5>
+                                <p class="offer-price">499€</p>
+                                <p class="original-price">559€</p>
+                                <div class="rating">
+                                    <span class="stars">★★★★☆</span>
+                                    <span class="reviews">36 opiniones</span>
+                                </div>
+                                <p class="delivery">Recíbelo gratis mañana</p>
+                                <div class="options">
+                                    <span>Otras opciones disponibles</span>
+                                </div>
+                                <button class="btn btn-primary btn-add-to-cart">Añadir al carrito</button>
+                                <label class="compare-label">
+                                    <input type="checkbox" class="compare-checkbox">
+                                    Comparar
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repite este bloque para los otros dos productos de ordenadores -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Electrodomésticos -->
+        <section id="electrodomesticos" class="product-section">
+            <div class="container">
+                <h2 class="text-center mb-4">Electrodomésticos</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="product-card">
+                            <span class="offer-badge">-15%</span>
+                            <img src="img4/Sansung_RF28R351SG.webp" class="card-img-top" alt="Refrigerador Samsung">
+                            <div class="card-body">
+                                <span class="tag tag-regalo">Envío gratis</span>
+                                <h5 class="card-title">Refrigerador Samsung RF28R7351SG</h5>
+                                <p class="offer-price">1.699€</p>
+                                <p class="original-price">1.999€</p>
+                                <div class="rating">
+                                    <span class="stars">★★★★☆</span>
+                                    <span class="reviews">128 opiniones</span>
+                                </div>
+                                <p class="delivery">Recíbelo en 3-5 días hábiles</p>
+                                <div class="options">
+                                    <span>Disponible en varios colores</span>
+                                </div>
+                                <button class="btn btn-primary btn-add-to-cart">Añadir al carrito</button>
+                                <label class="compare-label">
+                                    <input type="checkbox" class="compare-checkbox">
+                                    Comparar
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="product-card">
+                            <span class="offer-badge">-20%</span>
+                            <img src="img4/lg-f4x1009nwk.jpg" class="card-img-top" alt="Lavadora LG">
+                            <div class="card-body">
+                                <span class="tag tag-regalo">Instalación gratuita</span>
+                                <h5 class="card-title">Lavadora LG F4WV5012S0W</h5>
+                                <p class="offer-price">599€</p>
+                                <p class="original-price">749€</p>
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="reviews">95 opiniones</span>
+                                </div>
+                                <p class="delivery">Entrega en 2 días</p>
+                                <div class="options">
+                                    <span>12 kg de capacidad</span>
+                                </div>
+                                <label class="compare-label">
+                                    <input type="checkbox" class="compare-checkbox">
+                                    Comparar
+                                </label>
+                                <button class="btn btn-primary btn-add-to-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="product-card">
+                            <span class="offer-badge">-10%</span>
+                            <img src="img4/9f266bcf93d28f1d5fba040e3bb085ee080e823d_350_350.jpg" class="card-img-top" alt="Lavavajillas Bosch">
+                            <div class="card-body">
+                                <span class="tag tag-regalo">5 años de garantía</span>
+                                <h5 class="card-title">Lavavajillas Bosch SMS68TW03E</h5>
+                                <p class="offer-price">629€</p>
+                                <p class="original-price">699€</p>
+                                <div class="rating">
+                                    <span class="stars">★★★★☆</span>
+                                    <span class="reviews">76 opiniones</span>
+                                </div>
+                                <p class="delivery">Recíbelo mañana</p>
+                                <div class="options">
+                                    <span>14 servicios</span>
+                                </div>  
+                                <button class="btn btn-primary btn-add-to-cart">Añadir al carrito</button>
+                                <label class="compare-label">
+                                    <input type="checkbox" class="compare-checkbox">
+                                    Comparar
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Gadgets -->
+        <section id="gadgets" class="product-section">
+            <div class="container">
+                <h2 class="text-center mb-4">Gadgets</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="product-card">
+                            <span class="offer-badge">-25%</span>
+                            <img src="img4/111909_series7-480.png" class="card-img-top" alt="Apple Watch">
+                            <div class="card-body">
+                                <span class="tag tag-regalo">Regalo auriculares</span>
+                                <h5 class="card-title">Apple Watch Series 7</h5>
+                                <p class="offer-price">329€</p>
+                                <p class="original-price">439€</p>
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="reviews">203 opiniones</span>
+                                </div>
+                                <p class="delivery">Envío express disponible</p>
+                                <div class="options">
+                                    <span>GPS + Cellular</span>
+                                </div>
+                                <button class="btn btn-primary btn-add-to-cart">Añadir al carrito</button>
+                                <label class="compare-label">
+                                    <input type="checkbox" class="compare-checkbox">
+                                    Comparar
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="product-card">
+                            <span class="offer-badge">-30%</span>
+                            <img src="img4/DJI-Mavic-Air-2-04.jpg" class="card-img-top" alt="DJI Drone">
+                            <div class="card-body">
+                                <span class="tag tag-regalo">Curso de pilotaje gratis</span>
+                                <h5 class="card-title">DJI Mavic Air 2</h5>
+                                <p class="offer-price">699€</p>
+                                <p class="original-price">999€</p>
+                                <div class="rating">
+                                    <span class="stars">★★★★☆</span>
+                                    <span class="reviews">87 opiniones</span>
+                                </div>
+                                <p class="delivery">Entrega en 3-5 días</p>
+                                <div class="options">
+                                    <span>4K Video, 48MP Foto</span>
+                                </div>
+                                <button class="btn btn-primary btn-add-to-cart">Añadir al carrito</button>
+                                <label class="compare-label">
+                                    <input type="checkbox" class="compare-checkbox">
+                                    Comparar
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="product-card">
+                            <span class="offer-badge">-18%</span>
+                            <img src="img4/amazon_kindle_paperwhite_2021_paperwhite_32gb_con_luz_frontal_regulable_negro_l.jpg" class="card-img-top" alt="Kindle Paperwhite">
+                            <div class="card-body">
+                                <span class="tag tag-regalo">3 meses Kindle Unlimited</span>
+                                <h5 class="card-title">Kindle Paperwhite (11ª gen)</h5>
+                                <p class="offer-price">129€</p>
+                                <p class="original-price">159€</p>
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="reviews">156 opiniones</span>
+                                </div>
+                                <p class="delivery">Recíbelo pasado mañana</p>
+                                <div class="options">
+                                    <span>8GB, Resistente al agua</span>
+                                </div>
+                                <button class="btn btn-primary btn-add-to-cart">Añadir al carrito</button>
+                                <label class="compare-label">
+                                    <input type="checkbox" class="compare-checkbox">
+                                    Comparar
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 TechStore. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/proyecto4.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
